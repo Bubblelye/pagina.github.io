@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Medalla de excelencia · Harry Darby Rodríguez Guevara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Bitter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ece7da; --ink:#232a1c; --muted:#5b624f; --brass:#a07a2c; --brass-d:#6e5216; --panel:#e0dac9; --rule:#b9b199;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#1a2016; --ink:#ece6d2; --muted:#a9b095; --brass:#d1a84b; --brass-d:#8a6a22; --panel:#232b1e; --rule:#3d4733;}
+}
+:root[data-theme="dark"]{--bg:#1a2016; --ink:#ece6d2; --muted:#a9b095; --brass:#d1a84b; --brass-d:#8a6a22; --panel:#232b1e; --rule:#3d4733;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Bitter,Georgia,"Times New Roman",serif;line-height:1.65;font-size:1.05rem}
+main{max-width:640px;margin:0 auto;padding:2.5rem 1.4rem 4rem}
+.medal{display:block;width:min(78vw,300px);height:auto;margin:0 auto 1.6rem}
+.medal text{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;fill:var(--brass-d)}
+h1{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:900;font-size:clamp(2.4rem,11vw,3.6rem);line-height:1;margin:0 0 .4rem;text-align:center;letter-spacing:.01em}
+.rank{text-align:center;color:var(--muted);margin:0 0 2.2rem}
+dl{margin:0 0 2.2rem;border-top:2px solid var(--brass)}
+dl div{display:flex;gap:1rem;justify-content:space-between;padding:.7rem 0;border-bottom:1px solid var(--rule)}
+dt{color:var(--muted)}
+dd{margin:0;font-weight:600;text-align:right}
+h2{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-weight:700;font-size:1.6rem;margin:0 0 .6rem}
+p{margin:0 0 1.2rem;max-width:62ch}
+em{font-style:italic}
+blockquote{margin:2rem 0 0;padding:1.3rem 1.4rem;background:var(--panel);border-left:5px solid var(--brass)}
+blockquote p{margin:0}
+blockquote strong{font-family:"Big Shoulders Display",Impact,"Arial Narrow",sans-serif;font-size:1.5rem;font-weight:700;display:block;line-height:1.15;margin:.2rem 0 .6rem}
+</style>
+</head>
+<body>
+<main>
+  <svg class="medal" viewBox="0 0 300 300" role="img" aria-label="Medalla con la leyenda ON GUARD y AWARDED FOR EXCELLENCE">
+    <defs>
+      <path id="arcTop" d="M 42,150 A 108,108 0 0 1 258,150"/>
+      <path id="arcBot" d="M 33,150 A 117,117 0 0 0 267,150"/>
+    </defs>
+    <circle cx="150" cy="150" r="144" fill="var(--brass)"/>
+    <circle cx="150" cy="150" r="134" fill="none" stroke="var(--brass-d)" stroke-width="3"/>
+    <circle cx="150" cy="150" r="88" fill="var(--bg)" stroke="var(--brass-d)" stroke-width="3"/>
+    <text font-size="21" letter-spacing="3.2"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">AWARDED FOR EXCELLENCE</textPath></text>
+    <text font-size="26" letter-spacing="4"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">ON GUARD!</textPath></text>
+    <g stroke="var(--brass-d)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <line x1="150" y1="92" x2="150" y2="172"/>
+      <line x1="128" y1="116" x2="172" y2="116"/>
+      <circle cx="150" cy="178" r="4" fill="var(--brass-d)"/>
+      <polyline points="126,198 150,210 174,198"/>
+      <polyline points="126,210 150,222 174,210"/>
+    </g>
+  </svg>
+
+  <h1>Harry Darby Rodríguez Guevara</h1>
+  <p class="rank">Sargento Mayor</p>
+
+  <dl>
+    <div><dt>Cédula</dt><dd>9-152-994</dd></div>
+    <div><dt>Servicio</dt><dd>1989 – 2014</dd></div>
+    <div><dt>Comando</dt><dd>Comando Oeste</dd></div>
+  </dl>
+
+  <h2>Sobre la medalla</h2>
+  <p>Pertenece al U.S. Army Public Health Command-West (Comando de Salud Pública del Ejército de los Estados Unidos, Oeste). Su leyenda principal dice <em>ON GUARD!</em> (¡En guardia!) y alrededor aparece <em>AWARDED FOR EXCELLENCE</em> (otorgada por excelencia).</p>
+  <p>Cuenta con símbolos: rango de sargento mayor, espada y emblema de salud pública militar.</p>
+
+  <blockquote>
+    <p>Pertenece a<strong>Harry Darby Rodríguez Guevara</strong>
+    cédula 9-152-994, Sargento Mayor. Sirvió desde 1989 hasta 2014 con honor al Comando Oeste, incluyendo misiones en otros países. Esta medalla se otorga en reconocimiento a su valor y su excelencia.</p>
+  </blockquote>
+</main>
+</body>
+</html>
